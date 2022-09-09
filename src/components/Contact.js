@@ -1,7 +1,16 @@
-const Contact = () => {
+const Contact = ({ contact }) => {
+  const { title, data } = contact;
   return (
     <section id='contact'>
-      <h1>Contact</h1>
+      <div className='container'>
+        <h1>{title}</h1>
+        {data.map((el) => (
+          <div key={el.text}>
+            <i className={el.icon}></i>
+            <p>{el.text}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

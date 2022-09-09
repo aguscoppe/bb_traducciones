@@ -1,4 +1,3 @@
-import './App.css';
 import { useEffect, useState } from 'react';
 import { ENGLISH, SPANISH, data } from './data';
 import NavBar from './components/NavBar';
@@ -22,15 +21,23 @@ function App() {
     }
   }, []);
 
+  const changeLanguage = (newLanguage) => {
+    setLanguage(newLanguage);
+  };
+
   return (
     <>
-      <NavBar data={data[language].links} />
+      <NavBar navBar={data[language].navBar} changeLanguage={changeLanguage} />
       <Header data={data[language].header} />
-      <About data={data[language].users} />
-      <Services data={data[language].services} />
-      <Specializations data={data[language].specializations} />
-      <Contact data={data[language].contact} />
-      <Footer data={data[language].links} />
+      <About about={data[language].about} />
+      <Services services={data[language].services} />
+      <Specializations specializations={data[language].specializations} />
+      <Contact contact={data[language].contact} />
+      <Footer
+        links={data[language].links}
+        services={data[language].services}
+        specializations={data[language].specializations}
+      />
     </>
   );
 }

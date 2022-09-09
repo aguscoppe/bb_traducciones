@@ -1,7 +1,16 @@
-const Services = () => {
+const Services = ({ services }) => {
+  const { title, data } = services;
   return (
     <section id='services'>
-      <h1>Services</h1>
+      <div className='container'>
+        <h1>{title}</h1>
+        {data.map((el) => (
+          <div key={el.name}>
+            <i className={el.icon}></i>
+            <p>{el.name}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

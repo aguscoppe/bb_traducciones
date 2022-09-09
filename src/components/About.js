@@ -1,7 +1,21 @@
-const About = () => {
+const About = ({ about }) => {
+  const { title, data } = about;
   return (
     <section id='about'>
-      <h1>About</h1>
+      <div className='container'>
+        <h1>{title}</h1>
+        {data.map((user) => (
+          <div key={user.name}>
+            <div>
+              <h2>{user.name}</h2>
+              <p>{user.description}</p>
+            </div>
+            <div>
+              <img src={user.image} />
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

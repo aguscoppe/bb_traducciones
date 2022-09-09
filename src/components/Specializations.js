@@ -1,7 +1,15 @@
-const Specializations = () => {
+const Specializations = ({ specializations }) => {
+  const { title, data } = specializations;
   return (
     <section id='specializations'>
-      <h1>Specializations</h1>
+      <div className='container'>
+        <h1>{title}</h1>
+        <ul>
+          {data.map((el) => (
+            <li key={el}>{el}</li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

@@ -1,7 +1,19 @@
-const NavBar = () => {
+const NavBar = ({ navBar, changeLanguage }) => {
+  const { links, languages } = navBar;
   return (
     <section id='navBar'>
-      <h1>NavBar</h1>
+      <div className='container'>
+        {links.map((link) => (
+          <a key={link.id} href={link.id}>
+            {link.name}
+          </a>
+        ))}
+        {languages.map((language) => (
+          <button key={language.id} onClick={() => changeLanguage(language.id)}>
+            {language.name}
+          </button>
+        ))}
+      </div>
     </section>
   );
 };
