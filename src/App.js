@@ -21,13 +21,17 @@ function App() {
     }
   }, []);
 
-  const changeLanguage = (newLanguage) => {
-    setLanguage(newLanguage);
+  const changeLanguage = (e) => {
+    setLanguage(e.target.value);
   };
 
   return (
     <>
-      <NavBar navBar={data[language].navBar} changeLanguage={changeLanguage} />
+      <NavBar
+        navBar={data[language].navBar}
+        currentLanguage={language}
+        changeLanguage={changeLanguage}
+      />
       <Header data={data[language].header} />
       <About about={data[language].about} />
       <Services services={data[language].services} />

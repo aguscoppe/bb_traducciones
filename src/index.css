@@ -40,20 +40,83 @@ a {
   color: black;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
+#about,
+#services,
+#specializations,
+#contact,
+#footer {
+  padding: 60px 0;
 }
 
 /* NAVBAR */
 #navBar {
+  position: fixed;
+  width: 100%;
   background-color: var(--light-blue);
+  height: 54px;
+}
+
+#navBar .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navBar .container .logo {
+  width: 40px;
+  height: 40px;
+}
+
+#navBar .container .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#navBar .container a {
+  color: #fff;
+  margin-right: 16px;
+}
+
+#navBar .fa-solid {
+  color: #fff;
+  margin-right: 8px;
+}
+
+#navBar .select-container {
+  display: inline;
+}
+
+#navBar span {
+  cursor: pointer;
+}
+
+.select-options {
+  cursor: pointer;
+  position: fixed;
+  top: 54px;
+  right: 0;
+  width: 100px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+.select-options .option {
+  background-color: #ccc;
+  padding: 5px 10px;
+}
+
+.select-options .option:hover {
+  background-color: #bbb;
+}
+
+.select-options .selected {
+  background-color: #bbb;
 }
 
 /* HEADER */
 #header {
+  padding-top: 54px;
   background-color: var(--light-blue);
 }
 
@@ -66,6 +129,13 @@ img {
 /* ABOUT */
 #about {
   background-color: var(--light-grey);
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* SERVICES */
