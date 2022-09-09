@@ -68,7 +68,7 @@ const data = {
       ],
     },
     specializations: {
-      title: '',
+      title: 'Especializaciones',
       data: [
         'Jurídica',
         'Legalizaciones',

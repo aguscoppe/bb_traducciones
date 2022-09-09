@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import logoImg from '../assets/logo.png';
+import logoSvg from '../assets/logo.svg';
 
 const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
   const { links, languages } = navBar;
@@ -14,7 +15,7 @@ const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
       <section id='navBar'>
         <div className='container'>
           <div className='logo'>
-            <img src={logoImg} alt='logo' />
+            <img src={logoSvg} alt='logo' />
           </div>
           <div>
             {links.map((link) => (
@@ -47,6 +48,7 @@ const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
           ))}
         </div>
       )}
+      <i className='fa-brands fa-whatsapp'></i>
     </>
   );
 };

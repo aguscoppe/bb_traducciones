@@ -3,7 +3,7 @@ const Contact = ({ contact }) => {
   return (
     <section id='contact'>
       <div className='container'>
-        <h1>{title}</h1>
+        <h1 className='section-title'>{title}</h1>
         {data.map((el) => (
           <div key={el.text}>
             <i className={el.icon}></i>

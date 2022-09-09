@@ -6,7 +6,9 @@ const Header = ({ data }) => {
         <div className='container'>
           <h1>{title}</h1>
           <h3>{subtitle}</h3>
-          <a href={button.id}>{button.text}</a>
+          <a className='button' href={button.id}>
+            {button.text}
+          </a>
         </div>
       </div>
       <div className='container'>
