@@ -408,3 +408,43 @@ a {
     text-align: center;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+  #header h1 {
+    font-size: 1.5rem;
+  }
+  #header h3 {
+    font-size: 1.2rem;
+  }
+  #services .icon-wrapper {
+    flex-direction: column;
+  }
+  #services .icon-container {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  #header a {
+    padding: 9px 25px;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  #specializations .data-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  #specializations .data-wrapper ul {
+    list-style: none;
+  }
+  #contact .contact-item {
+    flex-direction: column;
+  }
+  #contact .contact-item .fa-solid {
+    margin-bottom: 14px;
+  }
+  #contact .contact-item .contact-icon {
+    margin-right: 0;
+  }
+}
