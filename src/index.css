@@ -413,6 +413,14 @@ a {
   .container {
     max-width: 90%;
   }
+  .burger-menu a,
+  .burger-menu p,
+  .burger-menu option {
+    font-size: 1.5rem;
+  }
+  .burger-menu .fa-sort-down {
+    font-size: 1.5rem;
+  }
   #header h1 {
     font-size: 1.5rem;
   }
@@ -425,6 +433,12 @@ a {
   #services .icon-container {
     margin: auto;
     margin-bottom: 25px;
+  }
+  #header .header-img {
+    height: 40vh;
+  }
+  #header .header-img div {
+    padding-top: 80px;
   }
   #header a {
     padding: 9px 25px;
