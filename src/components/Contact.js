@@ -4,12 +4,20 @@ const Contact = ({ contact }) => {
     <section id='contact'>
       <div className='container'>
         <h1 className='section-title'>{title}</h1>
-        {data.map((el) => (
-          <div key={el.text}>
-            <i className={el.icon}></i>
-            <p>{el.text}</p>
-          </div>
-        ))}
+        <div className='contact-container'>
+          {data.map((el) => (
+            <div className='contact-item' key={el.text}>
+              <div className='contact-icon'>
+                <i className={el.icon}></i>
+              </div>
+              <div className='contact-text'>
+                {el.text.map((item) => (
+                  <p>{item}</p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

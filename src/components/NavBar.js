@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import logoImg from '../assets/logo.png';
 import logoSvg from '../assets/logo.svg';
 
 const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
@@ -14,9 +13,9 @@ const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
     <>
       <section id='navBar'>
         <div className='container'>
-          <div className='logo'>
+          <a href='#' className='logo'>
             <img src={logoSvg} alt='logo' />
-          </div>
+          </a>
           <div>
             {links.map((link) => (
               <a key={link.id} href={link.id}>

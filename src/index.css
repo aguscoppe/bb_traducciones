@@ -50,8 +50,13 @@ a {
 }
 
 #services h1,
-#specializations h1 {
+#specializations h1,
+#contact h1 {
   margin-bottom: 40px;
+}
+
+#services h1,
+#specializations h1 {
   color: var(--light-blue);
 }
 
@@ -274,6 +279,34 @@ a {
 /* CONTACT */
 #contact {
   background-color: var(--light-blue);
+  color: #fff;
+  text-align: center;
+}
+
+#contact .contact-container {
+  width: 300px;
+  margin: auto;
+}
+
+#contact .contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#contact .contact-text {
+  text-align: left;
+}
+
+#contact .contact-icon {
+  margin-right: 20px;
+  font-size: 32px;
+  color: #e6ddd7;
+}
+
+#contact .contact-icon i {
+  text-align: right;
 }
 
 /* FOOTER */
@@ -283,30 +316,12 @@ a {
 
 @media (max-width: 1250px) {
   .container {
-    max-width: 1000px;
+    max-width: 900px;
   }
 }
 
-@media (max-width: 1050px) {
-  .container {
-    max-width: 800px;
-  }
-}
-
-@media (max-width: 850px) {
-  .container {
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 750px) {
+@media (max-width: 950px) {
   .container {
     max-width: 600px;
-  }
-}
-
-@media (max-width: 650px) {
-  .container {
-    max-width: 500px;
   }
 }

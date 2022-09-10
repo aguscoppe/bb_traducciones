@@ -87,7 +87,7 @@ const data = {
       data: [
         ...contactData,
         {
-          text: 'CABA (zona Congreso y Palermo)',
+          text: ['Congreso (CABA)', 'Palermo (CABA)'],
           icon: 'fa-solid fa-location-dot',
         },
       ],
@@ -164,7 +164,7 @@ const data = {
       data: [
         ...contactData,
         {
-          text: 'Buenos Aires, Argentina',
+          text: ['Buenos Aires, Argentina'],
           icon: 'fa-solid fa-location-dot',
         },
       ],
