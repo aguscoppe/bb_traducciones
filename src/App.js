@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { ENGLISH, SPANISH, data } from './data';
 import NavBar from './components/NavBar';
-import Header from './components/Header';
-import About from './components/About';
-import Services from './components/Services';
-import Specializations from './components/Specializations';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './sections/Header';
+import About from './sections/About';
+import Services from './sections/Services';
+import Specializations from './sections/Specializations';
+import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 function App() {
   const [language, setLanguage] = useState(ENGLISH);
@@ -38,7 +38,7 @@ function App() {
       <Specializations specializations={data[language].specializations} />
       <Contact contact={data[language].contact} />
       <Footer
-        links={data[language].links}
+        contact={data[language].contact}
         services={data[language].services}
         specializations={data[language].specializations}
       />

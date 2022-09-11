@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import logoSvg from '../assets/logo.svg';
 import BurgerNav from './BurgerNav';
+import LanguageDropdown from './LanguageDropdown';
 
 const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
   const { links, languages } = navBar;
@@ -45,24 +46,16 @@ const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
           links={links}
           languages={languages}
           changeLanguage={changeLanguage}
+          currentLanguage={currentLanguage}
           handleToggleBurgerMenu={handleToggleBurgerMenu}
         />
       )}
       {showDropdown && (
-        <div className='select-options'>
-          {languages.map((language) => (
-            <option
-              key={language.id}
-              value={language.id}
-              className={`option ${
-                currentLanguage === language.id ? 'selected' : ''
-              }`}
-              onClick={changeLanguage}
-            >
-              {language.name}
-            </option>
-          ))}
-        </div>
+        <LanguageDropdown
+          languages={languages}
+          currentLanguage={currentLanguage}
+          changeLanguage={changeLanguage}
+        />
       )}
       <i className='fa-brands fa-whatsapp'></i>
     </>

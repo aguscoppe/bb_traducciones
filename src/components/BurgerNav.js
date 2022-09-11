@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { ENGLISH } from '../data';
 
 const BurgerNav = ({
   links,
   languages,
   changeLanguage,
+  currentLanguage,
   handleToggleBurgerMenu,
 }) => {
   const [showLanguages, setShowLanguages] = useState(false);
@@ -21,7 +23,7 @@ const BurgerNav = ({
         </a>
       ))}
       <span onClick={toggleLanguageMenu}>
-        <p>Language</p>
+        <p>{currentLanguage === ENGLISH ? 'Language' : 'Idioma'}</p>
         <i className='fa-solid fa-sort-down'></i>
       </span>
       {showLanguages &&

@@ -12,7 +12,7 @@ const Contact = ({ contact }) => {
               </div>
               <div className='contact-text'>
                 {el.text.map((item) => (
-                  <p>{item}</p>
+                  <p key={item}>{item}</p>
                 ))}
               </div>
             </div>
