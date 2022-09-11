@@ -1,3 +1,5 @@
+import { getLink } from '../utils';
+
 const Contact = ({ contact }) => {
   const { title, data } = contact;
   return (
@@ -11,9 +13,7 @@ const Contact = ({ contact }) => {
                 <i className={el.icon}></i>
               </div>
               <div className='contact-text'>
-                {el.text.map((item) => (
-                  <p key={item}>{item}</p>
-                ))}
+                {el.text.map((item) => getLink(item))}
               </div>
             </div>
           ))}

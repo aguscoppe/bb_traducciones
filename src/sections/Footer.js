@@ -1,3 +1,5 @@
+import { getLink } from '../utils';
+
 const Footer = ({ contact, services, specializations }) => {
   return (
     <footer id='footer'>
@@ -29,7 +31,7 @@ const Footer = ({ contact, services, specializations }) => {
           <h5>{contact.title}</h5>
           <ul>
             {contact.data.map((el) => {
-              return el.text.map((text) => <li key={text}>{text}</li>);
+              return el.text.map((text) => <li key={text}>{getLink(text)}</li>);
             })}
           </ul>
         </div>

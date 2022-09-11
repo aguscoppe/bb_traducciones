@@ -18,7 +18,7 @@ const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
 
   return (
     <>
-      <section id='navBar'>
+      <nav id='navBar'>
         <div className='container'>
           <a href='#' className='logo'>
             <img src={logoSvg} alt='logo' />
@@ -40,7 +40,7 @@ const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
             </div>
           </div>
         </div>
-      </section>
+      </nav>
       {showBurgerMenu && (
         <BurgerNav
           links={links}
@@ -57,7 +57,9 @@ const NavBar = ({ navBar, currentLanguage, changeLanguage }) => {
           changeLanguage={changeLanguage}
         />
       )}
-      <i className='fa-brands fa-whatsapp'></i>
+      <a href='https://wa.me/541133291571' target='__blank'>
+        <i className='fa-brands fa-whatsapp'></i>
+      </a>
     </>
   );
 };
