@@ -27,7 +27,7 @@ const data = {
       ],
       languages: [
         { name: 'Español', id: SPANISH },
-        { name: 'Inglés', id: ENGLISH },
+        { name: 'English', id: ENGLISH },
       ],
     },
     header: {
@@ -103,7 +103,7 @@ const data = {
         { name: 'Contact', id: '#contact' },
       ],
       languages: [
-        { name: 'Spanish', id: SPANISH },
+        { name: 'Español', id: SPANISH },
         { name: 'English', id: ENGLISH },
       ],
     },
