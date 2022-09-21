@@ -50,7 +50,7 @@ const data = {
           name: 'Agustina Bartocci',
           image: AgustinaImg,
           description:
-            'Se desarrolla como traductora pública y cinetífico- técnica. Luego de completar la Diplomatura en Traducción Audiovisual en la Universidad Tecnológica Nacional, sumó la subtitulación y la transcripción a sus áreas de experiencia . Además, forma parte del Colegio de Traductores Públicos de la Ciudad de Buenos Aires.',
+            'Se desarrolla como traductora pública y científico-técnica. Luego de completar la Diplomatura en Traducción Audiovisual en la Universidad Tecnológica Nacional, sumó la subtitulación y la transcripción a sus áreas de experiencia. Además, forma parte del Colegio de Traductores Públicos de la Ciudad de Buenos Aires.',
         },
       ],
     },
@@ -112,7 +112,7 @@ const data = {
       subtitle: 'Language Services',
       button: { text: 'Contact', id: '#contact' },
       description:
-        'B&B Traducciones is a language service company founded by the English<>Spanish translators Agustina Bartocci and Matías Borich, both graduated from Universidad del Salvador (USAL). Their area of expertise encompasses from Sworn to Technical and Scientific translations.',
+        'B&B Traducciones is a language service company founded by the English<>Spanish translators Agustina Bartocci and Matías Borich, both graduated from Universidad del Salvador (USAL). Their areas of expertise encompasses from Sworn to Technical and Scientific translations.',
     },
     about: {
       title: 'About',
@@ -127,7 +127,7 @@ const data = {
           name: 'Agustina Bartocci',
           image: AgustinaImg,
           description:
-            'She is a Sworn and Technical-Scientific English- Spanish Translator. After completing a Diploma in Audiovisual Translation, she added subtitling and transcription to her areas of expertise. She is also an active member of the Colegio de Traductores Públicos de la Ciudad de Buenos Aires.',
+            'She is a Sworn and Technical-Scientific English<>Spanish Translator. After completing a Diploma in Audiovisual Translation, she added subtitling and transcription to her areas of expertise. She is also an active member of the Colegio de Traductores Públicos de la Ciudad de Buenos Aires.',
         },
       ],
     },
